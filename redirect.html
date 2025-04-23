@@ -2,41 +2,37 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <!-- 3秒後にユニバーサルリンクへ自動リダイレクト -->
-  <meta http-equiv="refresh" content="3; url=https://line.me/R/app/2005655430-9G7j20OP?ic=cRP5lnuXcp&whc=171878996586220">
+  <!-- 0秒でユニバーサルリンクへリダイレクト -->
+  <meta http-equiv="refresh" content="0; url=https://line.me/R/app/2005655430-9G7j20OP?ic=cRP5lnuXcp&whc=171878996586220">
   <title>LINE友だち追加</title>
   <style>
     body { font-family: sans-serif; padding: 1rem; line-height: 1.6; }
-    .notice {
-      background: #fffbcc;
-      border: 1px solid #ffe58f;
-      padding: .75rem;
-      margin-bottom: 1rem;
-      border-radius: 4px;
-    }
-    a { color: #00c300; text-decoration: underline; }
+    .notice { background: #ffe8e8; border: 1px solid #ff4d4f; padding: 1rem; border-radius: 4px; margin-bottom: 1rem; }
+    .button { display: inline-block; margin-top: .5rem; padding: .75rem 1rem; background: #1890ff; color: #fff; text-decoration: none; border-radius: 4px; }
   </style>
-  <script>
-    setTimeout(function() {
-      window.location = 'line://app/2005655430-9G7j20OP?ic=cRP5lnuXcp&whc=171878996586220';
-    }, 3000);
-  </script>
 </head>
 <body>
+  <!-- TikTok内ブラウザでは起動制限される旨を案内 -->
   <div class="notice">
-    <strong>操作のご案内</strong><br>
-    1. 下の「開く」をタップすると、  
-      「LINEアプリを開く」ダイアログが表示されます。<br>
-    2. そのあと、<u>「LINEアプリを開く」を長押し</u>、  
-      または右上の<span style="font-size:1.2em">…</span>をタップして  
-      LINEアプリを起動してください。
+    <strong>ご注意ください</strong><br>
+    TikTokアプリ内ブラウザでは直接「LINEアプリを開く」が動作しません。<br>
+    右上の<span style="font-weight:bold">…</span>をタップし、<br>
+    「Safariで開く」または「Chromeで開く」を選んだうえで、<br>
+    再度このページをタップしてください。
   </div>
 
-  <p>3秒後に自動的に処理を続行します。開かない場合は、下のボタンをタップしてください。</p>
-  <p>
-    <a href="line://app/2005655430-9G7j20OP?ic=cRP5lnuXcp&whc=171878996586220">
-      LINEアプリを開く
-    </a>
+  <!-- 外部ブラウザで開くためのボタン -->
+  <a 
+    href="https://hoikushireach.github.io/line-redirect/redirect.html" 
+    target="_blank" 
+    class="button"
+  >外部ブラウザで開く</a>
+
+  <!-- フォールバック文言 -->
+  <p style="margin-top:1.5rem;">
+    すでに外部ブラウザで開かれている場合は、<br>
+    <a href="line://app/2005655430-9G7j20OP?ic=cRP5lnuXcp&whc=171878996586220">こちらをクリック</a>して  
+    LINEアプリを開いてください。
   </p>
 </body>
 </html>
